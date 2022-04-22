@@ -1,4 +1,3 @@
-# https://pysource.com/instance-segmentation-mask-rcnn-with-python-and-opencv
 import cv2
 import numpy as np
 
@@ -6,7 +5,7 @@ import numpy as np
 net = cv2.dnn.readNetFromTensorflow("dnn/frozen_inference_graph_coco.pb",
 									"dnn/mask_rcnn_inception_v2_coco_2018_01_28.pbtxt")
 
-# Generate random colors
+# Generate random colors using rgba radiant
 colors = np.random.randint(0, 255, (80, 3))
 
 print(colors)
